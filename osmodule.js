@@ -1,5 +1,6 @@
 const os = require('node:os');
-console.log(os.freemem())
+const free=os.freemem()
+console.log(`${free /1024 /1024 /1024}`)
 // os.freemem()#
 // Added in: v0.3.3
 // Returns: <integer>
@@ -94,6 +95,7 @@ console.log(os.EQL)
 // Returns an estimate of the default amount of parallelism a program should use. Always returns a value greater than zero.
 
 // This function is a small wrapper about libuv's uv_available_parallelism().
+console.log(os.arch())
 
 // os.arch()#
 // Added in: v0.5.0
