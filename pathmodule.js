@@ -75,6 +75,7 @@ console.log(path.extname('.index.md'));
 console.log(path.format({
     dir: 'C:\\path\\dir',
     base: 'file.txt',
+    
   })); 
 
 
