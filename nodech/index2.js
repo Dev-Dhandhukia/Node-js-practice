@@ -13,4 +13,7 @@ const a=require('fs')
 // console.log(c)
 //a.renameSync("dev/bio.txt","dev/Bio.txt") 
 // a.unlinkSync("dev/Bio.txt")
-a.rmdirSync("dev")
+//a.rmdirSync("dev")
+a.writeFile("./file.txt/","Welcomme to my channel",(err)=>{
+    console.log("file created")
+})
